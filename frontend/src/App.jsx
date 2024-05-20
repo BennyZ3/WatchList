@@ -5,16 +5,25 @@ import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
+  const [test, setTest] = useState(null);
   useEffect(() => {
     // fetch("http://localhost:8888")
-    fetch("http://localhost:8888/error")
+    fetch("http://localhost:8888/test")
+      // fetch("http://localhost:8888/error")
       .then((response) => response.json())
-      .then((data) => console.log(data));
+      .then((data) => setTest(data));
   }, []);
   return (
     <>
       <div>
         <h1>WatchList</h1>
+        {test && (
+          <>
+            <p>{test.data?.name}</p>
+            <p>{test.data?.age}</p>
+            <p>{test.data?.email}</p>
+          </>
+        )}
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
