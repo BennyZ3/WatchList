@@ -1,3 +1,5 @@
+import { platform } from "os";
+
 export const sampleData = [
   {
     id: 1,
@@ -6,6 +8,7 @@ export const sampleData = [
     status: "Watching",
     currentEpisode: 950,
     totalEpisodes: 1107,
+    platform: "Crunchyroll",
   },
   {
     id: 2,
@@ -14,6 +17,7 @@ export const sampleData = [
     status: "Plan to Watch",
     currentEpisode: 0,
     totalEpisodes: 8,
+    platform: "Netflix",
   },
   {
     id: 3,
@@ -22,6 +26,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 500,
     totalEpisodes: 500,
+    platform: "Hulu",
   },
   {
     id: 4,
@@ -30,6 +35,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 87,
     totalEpisodes: 87,
+    platform: "CrunchyRoll",
   },
   {
     id: 5,
@@ -38,6 +44,7 @@ export const sampleData = [
     status: "Watching",
     currentEpisode: 22,
     totalEpisodes: 44,
+    platform: "Netflix",
   },
   {
     id: 6,
@@ -46,6 +53,7 @@ export const sampleData = [
     status: "Watching",
     currentEpisode: 123,
     totalEpisodes: 138,
+    platform: "Funimation",
   },
   {
     id: 7,
@@ -54,6 +62,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 24,
     totalEpisodes: 24,
+    platform: "CrunchyRoll",
   },
   {
     id: 8,
@@ -62,6 +71,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 96,
     totalEpisodes: 96,
+    platform: "Netflix",
   },
   {
     id: 9,
@@ -70,6 +80,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 24,
     totalEpisodes: 24,
+    platform: "Funimation",
   },
   {
     id: 10,
@@ -78,6 +89,7 @@ export const sampleData = [
     status: "Plan to Watch",
     currentEpisode: 0,
     totalEpisodes: 24,
+    platform: "CrunchyRoll",
   },
   {
     id: 11,
@@ -86,6 +98,7 @@ export const sampleData = [
     status: "Watching",
     currentEpisode: 170,
     totalEpisodes: 170,
+    platform: "Funimation",
   },
   {
     id: 12,
@@ -94,6 +107,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 148,
     totalEpisodes: 148,
+    platform: "Netflix",
   },
   {
     id: 13,
@@ -102,6 +116,7 @@ export const sampleData = [
     status: "Watching",
     currentEpisode: 200,
     totalEpisodes: 366,
+    platform: "CrunchyRoll",
   },
   {
     id: 14,
@@ -110,6 +125,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 37,
     totalEpisodes: 37,
+    platform: "Netflix",
   },
   {
     id: 15,
@@ -118,6 +134,7 @@ export const sampleData = [
     status: "Watching",
     currentEpisode: 200,
     totalEpisodes: 328,
+    platform: "Funimation",
   },
   {
     id: 16,
@@ -126,6 +143,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 85,
     totalEpisodes: 85,
+    platform: "CrunchyRoll",
   },
   {
     id: 17,
@@ -134,6 +152,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 64,
     totalEpisodes: 64,
+    platform: "Netflix",
   },
   {
     id: 18,
@@ -142,6 +161,7 @@ export const sampleData = [
     status: "Watching",
     currentEpisode: 50,
     totalEpisodes: 50,
+    platform: "CrunchyRoll",
   },
   {
     id: 19,
@@ -150,6 +170,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 25,
     totalEpisodes: 25,
+    platform: "Funimation",
   },
   {
     id: 20,
@@ -158,6 +179,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 24,
     totalEpisodes: 24,
+    platform: "CrunchyRoll",
   },
   {
     id: 21,
@@ -166,6 +188,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 50,
     totalEpisodes: 50,
+    platform: "Funimation",
   },
   {
     id: 22,
@@ -174,6 +197,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 23,
     totalEpisodes: 23,
+    platform: "Netflix",
   },
   {
     id: 23,
@@ -182,6 +206,7 @@ export const sampleData = [
     status: "Watching",
     currentEpisode: 35,
     totalEpisodes: 35,
+    platform: "CrunchyRoll",
   },
   {
     id: 24,
@@ -190,6 +215,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 24,
     totalEpisodes: 24,
+    platform: "Netflix",
   },
   {
     id: 25,
@@ -198,6 +224,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 25,
     totalEpisodes: 25,
+    platform: "Funimation",
   },
   {
     id: 26,
@@ -206,6 +233,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 47,
     totalEpisodes: 47,
+    platform: "CrunchyRoll",
   },
   {
     id: 27,
@@ -214,6 +242,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 100,
     totalEpisodes: 100,
+    platform: "Netflix",
   },
   {
     id: 28,
@@ -222,6 +251,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 12,
     totalEpisodes: 12,
+    platform: "CrunchyRoll",
   },
   {
     id: 29,
@@ -230,6 +260,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 24,
     totalEpisodes: 24,
+    platform: "Netflix",
   },
   {
     id: 30,
@@ -238,6 +269,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 12,
     totalEpisodes: 12,
+    platform: "Funimation",
   },
   {
     id: 31,
@@ -246,6 +278,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 25,
     totalEpisodes: 25,
+    platform: "CrunchyRoll",
   },
   {
     id: 32,
@@ -254,6 +287,7 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 22,
     totalEpisodes: 22,
+    platform: "Netflix",
   },
   {
     id: 33,
@@ -262,5 +296,6 @@ export const sampleData = [
     status: "Completed",
     currentEpisode: 13,
     totalEpisodes: 13,
+    platform: "CrunchyRoll",
   },
 ];
