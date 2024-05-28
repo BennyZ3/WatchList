@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const { sampleData } = require("./sample");
 
 const app = express();
 
@@ -12,12 +13,6 @@ app.get("/", (request, response) => {
   response.status(200).json({ data: "Service is running" });
 });
 
-const sampleData = {
-  id: 1,
-  name: "John Doe",
-  age: 30,
-  email: "jdtest@gmail.com",
-};
 app.get("/test", (request, response) => {
   response.status(200).json({ data: sampleData });
 });
