@@ -65,5 +65,18 @@ const ContentTable = ({ contents }) => {
     </table>
   );
 };
+ContentTable.propTypes = {
+  contents: [
+    {
+      id: Number,
+      title: String,
+      dateAdded: String,
+      status: String,
+      currentEpisode: Number,
+      totalEpisodes: Number,
+      platform: String,
+    },
+  ],
+};
 
 export default ContentTable;

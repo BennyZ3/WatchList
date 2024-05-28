@@ -21,4 +21,16 @@ const ContentRow = ({ content }) => {
   );
 };
 
+ContentRow.propTypes = {
+  content: {
+    id: Number,
+    title: String,
+    dateAdded: String,
+    status: String,
+    currentEpisode: Number,
+    totalEpisodes: Number,
+    platform: String,
+  },
+};
+
 export default ContentRow;
