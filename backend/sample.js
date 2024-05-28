@@ -1,6 +1,4 @@
-import { platform } from "os";
-
-export const sampleData = [
+const sampleData = [
   {
     id: 1,
     title: "One Piece",
@@ -299,3 +297,5 @@ export const sampleData = [
     platform: "CrunchyRoll",
   },
 ];
+
+module.exports = { sampleData };
