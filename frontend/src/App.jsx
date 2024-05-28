@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./App.css";
+import ContentTable from "./components/ContentTable";
 
 function App() {
   const [test, setTest] = useState(null);
@@ -16,9 +17,7 @@ function App() {
         <h1>WatchList</h1>
         {test && (
           <>
-            <p>{test.data?.name}</p>
-            <p>{test.data?.age}</p>
-            <p>{test.data?.email}</p>
+            <ContentTable contents={test.data} />
           </>
         )}
       </div>
