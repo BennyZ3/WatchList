@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const { sampleData } = require("./sample");
+const usersController = require("./controllers/usersController");
 
 const app = express();
 
@@ -17,6 +18,7 @@ app.get("/test", (request, response) => {
   response.status(200).json({ data: sampleData });
 });
 
+app.use("/users", usersController);
 // TODO: remove after frontend error testing
 app.get("/error", (request, response) => {
   console.log("Error route");

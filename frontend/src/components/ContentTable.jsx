@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ContentRow from "./ContentRow";
+import ContentRow from "ContentRow";
 
 const ContentTable = ({ contents }) => {
   const [sortKey, setSortKey] = useState("id");
